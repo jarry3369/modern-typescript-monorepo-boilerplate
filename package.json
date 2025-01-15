@@ -1,0 +1,35 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.15.3",
+  "engines": {
+    "node": ">=18.18.2",
+    "pnpm": ">=8.10.5"
+  },
+  "workspaces": [
+    "app",
+    "scripts"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --dir app dev",
+    "preview": "pnpm --dir app build && pnpm --dir app preview",
+    "build": "pnpm -r build",
+    "workspace": "pnpm --filter scripts run workspace"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "pnpm": "^9.15.3"
+  }
+}

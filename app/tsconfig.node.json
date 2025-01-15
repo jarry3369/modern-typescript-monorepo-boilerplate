@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "../.cache/typescript-app",
+    "emitDeclarationOnly": true
+  },
+  "include": ["core/config.ts"]
+}
